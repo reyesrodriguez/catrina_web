@@ -2,6 +2,8 @@
 
 html, body {
 	height: 100%;
+  width:100%;
+
 }
 a.nounderline:link{
     text-decoration: none;
@@ -43,7 +45,7 @@ a.nounderline:active {
 /*---------------*/
 
 .container-fluid {
-    color:#7E7170;
+  color:#7E7170;
 	text-align: center;
 }
 
@@ -67,19 +69,20 @@ a.nounderline:active {
     top: 0;
     z-index: 1;
     height:700px;
-    width:1280px;
+    width:100%;
 
 }
 
 
 /* navbar */
 .navbar{
-	color:blue;
+  position:fixed;
 	box-shadow: none;
+  width:100%;
 	border-left-color: transparent;
 	border-right-color: transparent;
-	border-bottom: solid 1px #fce2e1;
-	background:none;
+	background-color:white;
+  z-index: 2;
 }
 .container-fluid {
 	border: none;
@@ -100,7 +103,7 @@ a.nounderline:active {
 .img-responsive {
 	height:700px;
 	width: 100%;
-    background-size: 100% 100%;
+  background-size: 100% 100%;
 	
 }
 
@@ -133,37 +136,39 @@ a.nounderline:active {
 }
 .instagram {
 	padding-top: 2%;
-  margin-left:16%;
+ 
 
 }
 .instagram_text {
 	color:#978787;
   text-transform: none;
-   font-size:3.0vh;
+  
  
 }
 
 .btn-custom {
-  padding: 10px;
-  background-color: #C4634F;
-  border-color: none;
-  border-bottom-color: #383b3c;
-  border-radius: 20px;
-  border-style: none;
-  text-decoration:none;
-  position: absolute;
-  top: 50%;
-  margin: 0 32% auto;
-  font-size: 34px;
+    padding: 15px 30px;
+    background-color: #B0BCD8;
+    border: solid 2px red;
+    border-radius: 10px;
+    border-style: none;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin: 0 40% auto;
+    z-index:1;
 
 }
 .text {
-	color: #3D1430;
-  font-size:3.0vh;
+	color: black;
+  font-weight: bold;
+  font-size: 30px;
+  z-index:2;
 }
 .btn-custom:hover {
-	background-color:#0B040A;
+	background-color:white;
   opacity:0.6;
+  color:black;
   z-index: 9999;
 }
 
@@ -210,37 +215,65 @@ a.nounderline:active {
 @media screen and (min-width: 1024px){
     .img-responsive{
         background-image: url('/images/vintge_1.png');
+         width:100%;
     }
+    
 }
 
 /* Desktop */
 @media screen and (min-width: 980px) and (max-width: 1024px){
     .img-responsive{
         background-image: url('/images/vintge_1.png');
+         width:100%;
     }
+   
 }
 
 /* Tablet */
 @media screen and (min-width: 760px) and (max-width: 980px){
     .img-responsive{
         background-image: url('/images/vintge_1.png');
+        width:100%;
     }
+    .aboutText h3{
+      font-size: 3.0vh
+    }
+    .instagram_text{
+      font-size:3.0vh;
+    }
+   
 }
 
 /* Mobile HD */
 @media screen and (min-width: 350px) and (max-width: 760px){
     .img-responsive{
         background-image: url('/images/vintge_1.png');
+         width:100%;
     }
-    .instagram {
+    .aboutText h3{
+      font-size: 3.0vh
+    }
+    .instagram_text{
+      font-size:3.0vh;
+      margin-left: 17%;
+    }
+    .btn-custom {
+      margin-left: 138px;
+    }
 
-    }
 }
 
 /* Mobile LD */
 @media screen and (max-width: 350px){
     .img-responsive{
         background-image: url('/images/vintge_1.pngg');
+         width:100%;
+    }
+    .aboutText h3{
+      font-size: 3.0vh
+    }
+    .instagram_text{
+      font-size:3.0vh;
     }
 } 
 

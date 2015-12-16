@@ -11,6 +11,8 @@ $( document ).ready(function() {
 
    //})
 
+$('.collapse').collapse('hide')
+
    	$('#about').on('click', function(e){
     e.preventDefault();
     var target= $(this).get(0).id == 'about' ? $('#down') : $('#up');
