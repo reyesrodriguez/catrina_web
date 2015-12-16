@@ -133,11 +133,13 @@ a.nounderline:active {
 }
 .instagram {
 	padding-top: 2%;
+  margin-left:16%;
+
 }
-.instagram_text h1 {
+.instagram_text {
 	color:#978787;
-    text-transform: none;
-    letter-spacing: .05em;
+  text-transform: none;
+   font-size:3.0vh;
  
 }
 
@@ -157,6 +159,7 @@ a.nounderline:active {
 }
 .text {
 	color: #3D1430;
+  font-size:3.0vh;
 }
 .btn-custom:hover {
 	background-color:#0B040A;
@@ -203,6 +206,7 @@ a.nounderline:active {
 
 
 
+
 @media screen and (min-width: 1024px){
     .img-responsive{
         background-image: url('/images/vintge_1.png');
@@ -227,6 +231,9 @@ a.nounderline:active {
 @media screen and (min-width: 350px) and (max-width: 760px){
     .img-responsive{
         background-image: url('/images/vintge_1.png');
+    }
+    .instagram {
+
     }
 }
 
