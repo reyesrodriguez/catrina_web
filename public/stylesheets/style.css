@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+
 html, body {
 	height: 100%;
 }
@@ -31,7 +33,7 @@ a.nounderline:active {
 
 .site-footer{
 	height:142px;
-	background-color: rgba(210,345,255,0.5);
+	background-color: #66CCAA;
 }
 
 .site-footer, .wrap:after {
@@ -59,7 +61,7 @@ a.nounderline:active {
     bottom: 0;
     display: block;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.2;
     position: absolute;
     right: 0;
     top: 0;
@@ -84,6 +86,7 @@ a.nounderline:active {
 	
 }
 .navbar-brand {
+  font-family: 'Inconsolata' ;
 	font-size: 30px;
     position: absolute;
     width: 100%;
@@ -109,12 +112,14 @@ a.nounderline:active {
 /* content two */
 
 .constructionTwo h1 {
+  font-family: 'Inconsolata', ;
 	text-align: center;
 	font-size: 40px;
 	color:#978787;
 	padding-bottom: 20px;
 }
 .aboutText h3{
+  font-family: 'Inconsolata', ;
 	margin-left:20%;
 	margin-right: 20%;
 	color:#978787;
@@ -137,9 +142,9 @@ a.nounderline:active {
 }
 
 .btn-custom {
-  padding: 15px;
-  background-color: rgba(255,255,255,0.5);
-  border-color: #565a5c;
+  padding: 10px;
+  background-color: #C4634F;
+  border-color: none;
   border-bottom-color: #383b3c;
   border-radius: 20px;
   border-style: none;
@@ -151,11 +156,12 @@ a.nounderline:active {
 
 }
 .text {
-	color: black;
+	color: #3D1430;
 }
 .btn-custom:hover {
-	background-color:#565a5c;
-
+	background-color:#0B040A;
+  opacity:0.6;
+  z-index: 9999;
 }
 
 
