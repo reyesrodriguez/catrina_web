@@ -11,15 +11,22 @@ $( document ).ready(function() {
 
    //})
 
-$('.collapse').collapse('hide')
+// js code for bootstrap navbar collapse on click function//
 
-   	$('#about').on('click', function(e){
-    e.preventDefault();
-    var target= $(this).get(0).id == 'about' ? $('#down') : $('#up');
-    $('html, body').stop().animate({
-       scrollTop: target.offset().top
-    }, 1000);
+$(document).on('click',function(){
+  $('.collapse').collapse('hide');
 });
+
+$(document).on('click','.navbar-collapse',function(e){
+  if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle'){
+  $(this).collapse('hide');
+}
+});
+
+
+
+
+
 
 });
     
